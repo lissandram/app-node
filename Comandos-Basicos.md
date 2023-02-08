@@ -1,22 +1,26 @@
-# em edição
+# Comandos básicos
 
-Comandos básicos
-Para utilização do Docker é necessário conhecer alguns comandos e entender de forma clara e direta para que servem, assim como alguns exemplos de uso.
-
-Não abordaremos os comandos de criação de imagem e tratamento de problemas (troubleshooting) no Docker, pois têm capítulos específicos para o detalhamento.
-
-Executando um container
+## Executando um container
 Para iniciar um container é necessário saber a partir de qual imagem será executado. Para listar as imagens que seu Docker host tem localmente, execute o comando abaixo:
 
+``` 
 docker image list
+``` 
+
 As imagens retornadas estão presentes no seu Docker host e não demandam qualquer download da nuvem pública do Docker, a menos que deseje atualizá-la. Para atualizar a imagem basta executar o comando abaixo:
 
+``` 
 docker image pull python
+``` 
+
 Usamos a imagem chamada python como exemplo, mas caso deseje atualizar qualquer outra imagem, basta colocar seu nome no lugar de python.
 
 Caso deseje inspecionar a imagem que acabou de atualizar, basta usar o comando abaixo:
 
+``` 
 docker image inspect python
+``` 
+
 O comando inspect é responsável por informar todos os dados referentes à imagem.
 
 Agora que temos a imagem atualizada e inspecionada, podemos iniciar o container. Mas antes de simplesmente copiar e colar o comando, vamos entender como ele realmente funciona.
