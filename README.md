@@ -1,6 +1,9 @@
 # Sobre
 Essa aplicação utiliza uma imagem de node 14 disponivel no docker hub e está sendo utiliza para aprender os comandos iniciais
 Estou usando o livro https://stack.desenvolvedor.expert/appendix/docker para apoiar no estudo.
+Outras referências:
+* https://docs.docker.com/engine/reference/builder/
+* https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
 
 ## Por que usar Docker?
 
